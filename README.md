@@ -20,3 +20,6 @@ The function will allow you to quickly set up a basic analysis on :
 Args :
 - ds:pandas.DataFrame  : The pandas DataFrame for which you which you want to perform basic analysis.
 - l:int=30             : The optional number of '-' car that will be used in the displayed elements. 30 is a good number for display.
+
+Example : 
+<img width="1156" height="657" alt="image" src="https://github.com/user-attachments/assets/e9bc209b-251c-4d4b-9dc1-e2a16049bab0" />
