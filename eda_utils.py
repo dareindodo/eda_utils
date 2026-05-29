@@ -9,12 +9,8 @@ def end_format(l:int) -> str:
     return "-"*l + "\n"
 
 def eda_prime(ds:pandas.DataFrame, l:int=30):
-    print(header_format("Dataset Shape", l))
-    print(ds.shape)
-    print(end_format(l))
-
-    print(header_format("Dataset Shape", l))
-    print(ds.shape)
+    print(header_format("Dataset Shape & Columns", l))
+    print(ds.shape, "\n", ds.columns)
     print(end_format(l))
 
     print(header_format("Dataset Sample", l))
