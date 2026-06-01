@@ -8,6 +8,11 @@ def header_format(str:str, l) -> str:
 def end_format(l:int) -> str:
     return "-"*l + "\n"
 
+def mv_prime(ds:pandas.DataFrame, l:int=30):
+    print(header_format("Dataset MValues", l))
+    print(100*ds.isnull().sum()/ds.shape[0])
+    print(end_format(l))
+
 def eda_prime(ds:pandas.DataFrame, l:int=30):
     print(header_format("Dataset Shape & Columns", l))
     print(ds.shape, "\n", ds.columns)
@@ -21,6 +26,4 @@ def eda_prime(ds:pandas.DataFrame, l:int=30):
     print(ds.describe(include = "all"))
     print(end_format(l))
     
-    print(header_format("Dataset MValues", l))
-    print(100*ds.isnull().sum()/ds.shape[0])
-    print(end_format(l))
+    mv_prime(ds, l)
